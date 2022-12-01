@@ -40,16 +40,6 @@ jobs:
           git push -f
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB }}
-  sync:
-    needs: build
-    runs-on: ubuntu-latest
-    continue-on-error: True
-    steps:
-      - uses: wearerequired/git-mirror-action@master
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
-        with:
-          source-repo: "git@github.com:Haoqi7/EverydayNews.git"
   sesrch:
     needs: build
     runs-on: ubuntu-latest #运行环境

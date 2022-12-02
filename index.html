@@ -6,9 +6,9 @@
     <title>News </title>
     <meta name="keywords" content="EverydayNews">
     <meta name="description" content="EverydayNews"> <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="https://haoqi7.github.io/EverydayNews/css/common.css">
-    <link type="text/css" rel="stylesheet" href="https://haoqi7.github.io/EverydayNews/css/style.css">
-    <link type="text/css" rel="stylesheet" href="https://haoqi7.github.io/EverydayNews/css/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="https://haoqiyun.ml/EverydayNews/css/common.css">
+    <link type="text/css" rel="stylesheet" href="https://haoqiyun.ml/EverydayNews/css/style.css">
+    <link type="text/css" rel="stylesheet" href="https://haoqiyun.ml/EverydayNews/css/iconfont.css">
     <style type="text/css">
         #news {
             all: unset;
@@ -254,9 +254,9 @@
 
     </style>
     <!-- JavaScript -->
-    <script type="text/javascript" src="https://haoqi7.github.io/EverydayNews/js/loading.js"></script>
-    <script type="text/javascript" src="https://haoqi7.github.io/EverydayNews/js/common.js"></script>
-    <script src="https://haoqi7.github.io/EverydayNews/searchdata.js"></script>
+    <script type="text/javascript" src="haoqiyun.ml/EverydayNews/js/loading.js"></script>
+    <script type="text/javascript" src="haoqiyun.ml/EverydayNews/js/common.js"></script>
+    <script src="haoqiyun.ml/EverydayNews/searchdata.js"></script>
 </head>
 
 <body>
@@ -286,8 +286,8 @@
                 var yesdate = yesterday.getDate() + '';
                 var dates = now.getDate()
                 var hour = now.getHours(); //得到小时数
-                var head = 'https://haoqi7.github.io/EverydayNews/';
-                var headgithub = 'https://haoqi7.github.io/EverydayNews/'
+                var head = 'haoqiyun.ml/EverydayNews/';
+                var headgithub = 'haoqiyun.ml/EverydayNews/'
                 var end = ".jpg";
                 var textend = ".txt"
                 if (hour < 4) {
@@ -486,7 +486,7 @@
                 sharesrc = document.getElementById('news').src
                 contents = document.getElementById('news').src.substring(sharesrc.length-14, sharesrc.length-4);
                 downloadsrc = contents;
-                contents = 'https://haoqi7.github.io/EverydayNews?date=' + contents;
+                contents = 'haoqiyun.ml/EverydayNews?date=' + contents;
                 document.getElementById('share').innerHTML = contents;
             }
 
@@ -507,7 +507,7 @@
             }
 
             function downloadtext() {
-                downloadlink = 'https://haoqi7.github.io/EverydayNews/'+downloadsrc.substring(0, 4)+'/'+downloadsrc.substring(5, 7)+'/'+downloadsrc+'.txt';
+                downloadlink = 'https://haoqiyun.ml/EverydayNews/'+downloadsrc.substring(0, 4)+'/'+downloadsrc.substring(5, 7)+'/'+downloadsrc+'.txt';
                 window.open(downloadlink)
             }
             function downloadjson() {
@@ -611,7 +611,7 @@
                 result.innerHTML = result.innerHTML.substring(0, result.innerHTML.length-4)+textsearchresult.substring(0, textsearchresult.length-4)+'<hr><a href="https://github.com/ravelloh/RPageSearch" class="tr">Search powered by RavelloH\'s RPageSearch</a>'
             }
         </script>
-        <script src="https://haoqi7.github.io/EverydayNews/js/script.js"></script>
+        <script src="https://haoqiyun.ml/EverydayNews/js/script.js"></script>
         <script src="//instant.page/5.1.0" type="module"
             integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
     </body>

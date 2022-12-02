@@ -477,7 +477,12 @@
                     throw err
                 });
             }
-
+            function speedtest() {
+                getSpeedWithImg("https://haoqiyun.ml/EverydayNews/css/avatar.jpg", 55.2).then(speed => {
+                    speed = 60000 / speed + '';
+                    document.getElementById('loadtime').innerHTML = speed.substring(0, speed.indexOf(".") + 5) + '秒';
+                })
+            }
             setInterval('speedtest()', '5000')
             setInterval('share()', '1000')
             speedtest()
